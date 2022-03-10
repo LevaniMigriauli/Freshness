@@ -1,2 +1,82 @@
-.header {
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+.main-header {
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1.9rem;
+    &__social-media-icons {
+      display: flex;
+      gap: 14px;
+
+      .icons {
+        height: 34px;
+        width: auto;
+      }
+    }
+
+    &__search-field {
+      .input-field {
+        height: 34px;
+        width: 220px;
+        color: #f1f3f5;
+        background-color: #343a40;
+        border-radius: 8px;
+        border: none;
+      }
+
+      .btn-search {
+        height: 34px;
+        border-radius: 8px;
+        border: none;
+        background-color: $cyan;
+        color: $white;
+      }
+    }
+  }
+
+  .header__navigation {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+
+      &__name {
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $dark-grey;
+
+        &-first {
+          font-size: 40px;
+        }
+      }
+
+      &__template {
+        font-size: 16px;
+        color: $grey;
+      }
+    }
+
+    .main-navigation {
+      &__list {
+        font-size: 14px;
+        color: $grey;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+      }
+    }
+  }
 }
