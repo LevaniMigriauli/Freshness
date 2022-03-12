@@ -1,31 +1,61 @@
-/*
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-*/
-
 .main-header {
-  .header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    margin-bottom: 1.9rem;
-    &__social-media-icons {
+  padding-bottom: 2.4rem;
+  border-bottom: 0.1rem $light-gray solid;
+  margin-bottom: 9rem;
+
+  .header-info {
+    // letter-spacing: 0.1px;
+    line-height: 0.8;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__social-network {
       display: flex;
-      gap: 14px;
+      gap: 1.4rem;
 
       .icons {
-        height: 34px;
+        height: 3.4rem;
         width: auto;
       }
     }
 
+    &__logo {
+      display: flex;
+      flex-direction: column;
+
+      .logo-name {
+        font-size: 3.1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $dark-grey;
+
+        &-first {
+          font-size: 4rem;
+        }
+        &-template {
+          font-size: 1.6rem;
+          font-weight: 100;
+          color: $grey;
+        }
+      }
+    }
+  }
+
+  .navigation {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    justify-content: space-between;
+
     &__search-field {
+      align-self: flex-end;
       .input-field {
-        height: 34px;
-        width: 220px;
+        height: 3.4rem;
+        width: 22rem;
         color: #f1f3f5;
         background-color: #343a40;
         border-radius: 8px;
@@ -33,49 +63,28 @@ FONT SIZE SYSTEM (px)
       }
 
       .btn-search {
-        height: 34px;
+        height: 3.4rem;
         border-radius: 8px;
         border: none;
         background-color: $cyan;
         color: $white;
       }
     }
-  }
-
-  .header__navigation {
-    display: flex;
-    justify-content: space-between;
-
-    .logo {
-      display: flex;
-      flex-direction: column;
-
-      &__name {
-        font-size: 30px;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: $dark-grey;
-
-        &-first {
-          font-size: 40px;
-        }
-      }
-
-      &__template {
-        font-size: 16px;
-        color: $grey;
-      }
-    }
-
     .main-navigation {
       &__list {
-        font-size: 14px;
-        color: $grey;
+        font-size: 1.4rem;
         text-transform: uppercase;
         font-weight: 500;
         display: flex;
-        gap: 20px;
-        justify-content: flex-end;
+        gap: 2rem;
+        // justify-content: flex-end;
+
+        .nav-item {
+          color: $grey;
+        }
+        .first-item {
+          color: $cyan;
+        }
       }
     }
   }

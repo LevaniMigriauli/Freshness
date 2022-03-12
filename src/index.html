@@ -9,8 +9,8 @@
   <body>
     <div class="container">
       <header class="main-header">
-        <div class="header">
-          <div class="header__social-media-icons">
+        <div class="header-info">
+          <div class="header-info__social-network">
             <img
               class="icons"
               src="images/content/linkedin.png"
@@ -37,37 +37,57 @@
               alt="Wifi icon"
             />
           </div>
-          <div class="header__search-field">
-            <input
-              class="input-field"
-              type="text"
-              value="Search Our Website..."
-            />
-            <button class="btn-search">SEARCH</button>
+          <div class="header-info__logo">
+            <span class="logo-name">
+              <span class="logo-name-first">F</span>reshness</span
+            >
+            <span class="logo-name-template">Free PSD website Template</span>
           </div>
         </div>
 
-        <div class="header__navigation">
-          <div class="logo">
-            <span class="logo__name">
-              <span class="logo__name-first">F</span>reshness</span
-            >
-            <span class="logo__template">Free PSD website Template</span>
-          </div>
+        <div class="navigation">
+          <form class="navigation__search-field">
+            <input
+              class="input-field"
+              type="text"
+              placeholder="Search Our Website"
+            />
+            <button class="btn-search">SEARCH</button>
+          </form>
           <nav class="main-navigation">
             <ul class="main-navigation__list">
-              <li><a href="#">home</a></li>
-              <li><a href="#">style demo</a></li>
-              <li><a href="#">full width</a></li>
-              <li><a href="#">dropdown</a></li>
-              <li><a href="#">portfolio</a></li>
-              <li><a href="#">gallery</a></li>
+              <li><a class="nav-item first-item" href="#">home</a></li>
+              <li><a class="nav-item" href="#">style demo</a></li>
+              <li><a class="nav-item" href="#">full width</a></li>
+              <li><a class="nav-item" href="#">dropdown</a></li>
+              <li><a class="nav-item" href="#">portfolio</a></li>
+              <li><a class="nav-item" href="#">gallery</a></li>
             </ul>
           </nav>
         </div>
       </header>
       <main>
-        <section></section>
+        <section class="section-hero">
+          <div class="hero-img-box" role="img" aria-label="monitor"></div>
+
+          <div class="hero-text-box">
+            <h1 class="hero-text-box__title">searching for...</h1>
+            <p class="hero-text-box__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+              eos laborum corporis officia necessitatibus vitae aspernatur
+              voluptate eveniet numquam! Rem placeat amet minus laborum
+              excepturi! Facere, placeat.
+            </p>
+            <button class="hero-text-box__btn">READ MORE »</button>
+            <div class="hero-text-box__dots">
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot dot--empty">&nbsp;</button>
+            </div>
+          </div>
+        </section>
       </main>
       <footer></footer>
     </div>

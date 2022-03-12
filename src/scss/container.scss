@@ -1,10 +1,14 @@
+html {
+  font-size: 62.5%;
+}
+
 .container {
-  padding: 1.875rem 1.25rem;
+  padding: 2rem 2rem;
   margin: 0 auto;
 
   font-family: serif;
 
-  border-top: 4px solid skyblue;
+  border-top: 0.4rem solid skyblue;
 
-  width: 1000px;
+  max-width: 100rem;
 }
