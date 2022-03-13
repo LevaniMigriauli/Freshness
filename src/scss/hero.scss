@@ -1,6 +1,10 @@
 .section-hero {
   display: flex;
-  gap: 11rem;
+  gap: 10rem;
+
+  //   display: grid;
+  //   grid-template-columns: 0.8fr 1fr;
+  //   column-gap: 10rem;
 
   margin-left: 5rem;
   padding: 0 2rem 8rem 2rem;
