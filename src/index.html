@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Freshness</title>
   </head>
   <body>
     <div class="container">
@@ -56,14 +56,39 @@
           </form>
           <nav class="main-navigation">
             <ul class="main-navigation__list">
-              <li><a class="nav-item first-item" href="#">home</a></li>
-              <li><a class="nav-item" href="#">style demo</a></li>
-              <li><a class="nav-item" href="#">full width</a></li>
-              <li><a class="nav-item" href="#">dropdown</a></li>
-              <li><a class="nav-item" href="#">portfolio</a></li>
-              <li><a class="nav-item" href="#">gallery</a></li>
+              <li class="list-item">
+                <a class="nav-item first-item" href="#">home</a>
+              </li>
+              <li class="list-item">
+                <a class="nav-item" href="#">style demo</a>
+              </li>
+              <li class="list-item">
+                <a class="nav-item" href="#">full width</a>
+              </li>
+              <li class="list-item">
+                <a class="nav-item" href="#">dropdown</a>
+              </li>
+              <li class="list-item">
+                <a class="nav-item" href="#">portfolio</a>
+              </li>
+              <li class="list-item">
+                <a class="nav-item" href="#">gallery</a>
+              </li>
             </ul>
           </nav>
+
+          <button class="button-mobile-nav">
+            <img
+              class="icon-mobile-nav"
+              src="images/content/menu-outline.svg"
+              alt="menu-outline"
+            />
+            <img
+              class="icon-mobile-nav"
+              src="images/content/close-outline.svg"
+              alt="close-outline"
+            />
+          </button>
         </div>
       </header>
       <main>
@@ -117,7 +142,7 @@
             </p>
             <button class="product__more-info-btn btn">Read more »</button>
           </div>
-          <div class="product">
+          <div class="product new-product">
             <img
               class="product__img"
               src="images/content/product1.jpg"
@@ -270,7 +295,10 @@
         </div>
       </footer>
       <footer class="footer">
-        <p id="copyright">Copyright © 2022 Freshness - All Rights Reserved</p>
+        <p id="copyright">
+          Copyright &copy; <span class="year"> 2022</span> Freshness - All
+          Rights Reserved
+        </p>
         <p>Template by OS Template</p>
       </footer>
     </div>

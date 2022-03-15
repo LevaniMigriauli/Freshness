@@ -1,6 +1,11 @@
 html {
   font-size: 62.5%;
   font-family: serif;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container {

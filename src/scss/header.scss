@@ -10,6 +10,8 @@
 
   padding: 2rem 2rem;
 
+  position: relative;
+
   .header-info {
     // letter-spacing: 0.1px;
     line-height: 0.8;
@@ -51,9 +53,9 @@
   }
 
   .navigation {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    gap: 4.5rem;
+    gap: 2rem;
     justify-content: space-between;
 
     &__search-field {
@@ -76,20 +78,50 @@
       }
     }
     .main-navigation {
+      display: flex;
+
+      // display: none;
+      // display: block;
+
       &__list {
         font-size: 1.4rem;
         text-transform: uppercase;
         font-weight: 500;
         display: flex;
         gap: 2rem;
-        // justify-content: flex-end;
 
-        .nav-item {
-          color: $grey;
+        .list-item {
+          align-self: flex-end;
+
+          .nav-item:link,
+          .nav-item:visited {
+            color: $grey;
+          }
+
+          .nav-item:hover,
+          .nav-item:active {
+            color: $cyan;
+          }
         }
-        .first-item {
-          color: $cyan;
-        }
+      }
+    }
+
+    .button-mobile-nav {
+      border: none;
+      background: none;
+      cursor: pointer;
+      align-self: flex-end;
+
+      display: none;
+
+      .icon-mobile-nav {
+        height: 4.4rem;
+        width: 4.4rem;
+        color: #333;
+      }
+
+      .icon-mobile-nav[alt="close-outline"] {
+        display: none;
       }
     }
   }
