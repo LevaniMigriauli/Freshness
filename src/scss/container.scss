@@ -1,7 +1,18 @@
 html {
+  /* Below 912px (tablets) */
   font-size: 62.5%;
   font-family: serif;
   overflow-x: hidden;
+}
+@media (max-width: 57em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 51em) {
+  html {
+    font-size: 52%;
+  }
 }
 
 body {

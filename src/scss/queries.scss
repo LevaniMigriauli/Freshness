@@ -1,11 +1,3 @@
-/* Below 912px (tablets) */
-
-@media (max-width: 57em) {
-  html {
-    font-size: 56.25%;
-  }
-}
-
 /* Below 816px (smaller tablets) */
 
 @media (max-width: 51em) {
@@ -83,12 +75,17 @@
 /* Below 704px (smaller tablets) */
 
 @media (max-width: 44em) {
-  .section-hero {
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 1fr;
-    row-gap: 12.6rem;
-    margin-left: 0;
+  .section-hero-slider {
+    margin-right: 5rem;
     padding: 0 5.6rem 9.6rem 5.6rem;
+
+    height: 95rem;
+  }
+
+  .slide {
+    grid-template-rows: 1fr 2fr !important;
+    grid-template-columns: 1fr !important;
+    row-gap: 12.6rem;
   }
   .hero-text-box {
     grid-row: 1/2;
