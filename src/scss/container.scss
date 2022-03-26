@@ -1,18 +1,7 @@
 html {
-  /* Below 912px (tablets) */
   font-size: 62.5%;
   font-family: serif;
   overflow-x: hidden;
-}
-@media (max-width: 57em) {
-  html {
-    font-size: 56.25%;
-  }
-}
-@media (max-width: 51em) {
-  html {
-    font-size: 52%;
-  }
 }
 
 body {
@@ -25,4 +14,17 @@ body {
   border-top: 0.4rem solid skyblue;
 
   max-width: 100rem;
+}
+
+/* Below 912px (smaller laptops) */
+@media (max-width: 57em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+/* Below 816px (tablets) */
+@media (max-width: 51em) {
+  html {
+    font-size: 52%;
+  }
 }
