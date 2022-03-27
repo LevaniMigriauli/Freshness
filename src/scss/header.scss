@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
 
+  max-width: 100rem;
+
   padding-bottom: 2.4rem;
 
   margin-bottom: 4rem;
@@ -127,6 +129,20 @@
   }
 }
 
+// Sticky navigation
+.sticky {
+  position: fixed;
+  top: 0;
+  // // bottom: 0;
+  // width: 54%;
+  // height: 13rem;
+  // padding-top: 1rem;
+  // padding-bottom: 0;
+  gap: 19.5rem;
+  background-color: rgba(255, 255, 255, 0.897);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
+}
 /* Below 816px (smaller tablets) */
 @media (max-width: 51em) {
   .button-mobile-nav {
