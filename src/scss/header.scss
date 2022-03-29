@@ -130,10 +130,10 @@
 }
 
 // Sticky navigation
-.sticky {
+.sticky .main-header {
   position: fixed;
   top: 0;
-  // // bottom: 0;
+  // bottom: 0;
   // width: 54%;
   // height: 13rem;
   // padding-top: 1rem;
@@ -143,8 +143,17 @@
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
 }
+
+.sticky .section-hero-slider {
+  margin-top: 18rem;
+}
 /* Below 816px (smaller tablets) */
 @media (max-width: 51em) {
+  .sticky .main-header {
+    width: 100%;
+    max-height: 14rem;
+    // gap: 36rem !important;
+  }
   .button-mobile-nav {
     display: block !important;
     z-index: 1;
@@ -204,6 +213,15 @@
   }
 }
 
+/* Below 704px (smaller tablets) */
+@media (max-width: 44em) {
+  .sticky .main-header {
+    width: 100%;
+    gap: 2rem;
+    // gap: 32rem !important;
+  }
+}
+
 /* Below 560px (phones) */
 @media (max-width: 35em) {
   .main-header {
@@ -211,10 +229,19 @@
     flex-direction: column;
     gap: 1.6rem;
   }
+  .sticky .main-header {
+    width: 100%;
+    gap: 0;
+    // gap: 32rem !important;
+  }
   .header-info,
   .navigation {
     display: flex;
     flex-direction: row !important;
     justify-content: space-between !important;
+
+    &__search-field {
+      align-self: center !important;
+    }
   }
 }

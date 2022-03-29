@@ -1,11 +1,38 @@
 "use strict";
 
+// const { isAbsoluteURL } = require("webpack-dev-server");
+
 // mobile navigation
 const btnNavEl = document.querySelector(".button-mobile-nav");
 const navigationEl = document.querySelector(".navigation");
 btnNavEl.addEventListener("click", function () {
   navigationEl.classList.toggle("nav-open");
 });
+
+// Sticky navigation
+
+const sectionHeroEl = document.querySelector(".section-hero-slider");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-140px",
+  }
+);
+obs.observe(sectionHeroEl);
 
 // Footer set current year
 const yearEl = document.querySelector(".year");
