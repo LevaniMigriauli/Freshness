@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header" id="header">
         <div class="header-info">
           <div class="header-info__social-network">
             <img
@@ -66,13 +66,13 @@
                 <a class="nav-item" href="#">full width</a>
               </li>
               <li class="list-item">
-                <a class="nav-item" href="#">dropdown</a>
+                <a class="nav-item" href="#products">dropdown</a>
               </li>
               <li class="list-item">
                 <a class="nav-item" href="#">portfolio</a>
               </li>
               <li class="list-item">
-                <a class="nav-item" href="#">gallery</a>
+                <a class="nav-item" href="#features">gallery</a>
               </li>
             </ul>
           </nav>
@@ -92,28 +92,88 @@
         </div>
       </header>
       <main>
-        <section class="section-hero">
-          <div class="hero-img-box" role="img" aria-label="monitor"></div>
+        <section class="section-hero-slider">
+          <div class="slide">
+            <div class="hero-img-box" role="img" aria-label="monitor"></div>
 
-          <div class="hero-text-box">
-            <h1 class="hero-text-box__title">searching for</h1>
-            <p class="hero-text-box__description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
-              eos laborum corporis officia necessitatibus vitae aspernatur
-              voluptate eveniet numquam! Rem placeat amet minus laborum
-              excepturi! Facere, placeat.
-            </p>
-            <button class="hero-text-box__btn btn">READ MORE »</button>
-            <div class="hero-text-box__dots">
+            <div class="hero-text-box">
+              <h1 class="hero-text-box__title">searching for</h1>
+              <p class="hero-text-box__description">
+                Lorem ipsum dolor sit, adipisicing elit. Aliquid eos laborum
+                corporis officia necessitatibus vitae aspernatur voluptate
+                eveniet numquam! Rem placeat amet minus laborum excepturi!
+                Facere, placeat. placeat amet minus laborum excepturi!
+              </p>
+              <button class="hero-text-box__btn btn">READ MORE »</button>
+            </div>
+          </div>
+          <div class="slide">
+            <div
+              class="hero-img-box hero-img1"
+              role="img"
+              aria-label="monitor"
+            ></div>
+
+            <div class="hero-text-box">
+              <h1 class="hero-text-box__title">Title</h1>
+              <p class="hero-text-box__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aliquid eos laborum corporis officia necessitatibus vitae
+                aspernatur voluptate eveniet numquam! Rem placeat amet minus
+                laborum excepturi! Facere, placeat.
+              </p>
+              <button class="hero-text-box__btn btn">READ MORE »</button>
+            </div>
+          </div>
+          <div class="slide">
+            <div
+              class="hero-img-box hero-img2"
+              role="img"
+              aria-label="monitor"
+            ></div>
+
+            <div class="hero-text-box">
+              <h1 class="hero-text-box__title">text heading</h1>
+              <p class="hero-text-box__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aliquid eos laborum corporis officia necessitatibus vitae
+                aspernatur numquam! Rem placeat amet minus laborum excepturi!
+                Facere, placeat. aspernatur voluptate eveniet numquam!
+              </p>
+              <button class="hero-text-box__btn btn">READ MORE »</button>
+            </div>
+          </div>
+          <div class="slide">
+            <div
+              class="hero-img-box hero-img3"
+              role="img"
+              aria-label="monitor"
+            ></div>
+
+            <div class="hero-text-box">
+              <h1 class="hero-text-box__title">text heading</h1>
+              <p class="hero-text-box__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aliquid eos laborum corporis officia necessitatibus vitae
+                aspernatur numquam! Rem placeat amet minus laborum excepturi!
+                Facere, placeat. soluta voluptatum dolorem, accusamus error.
+              </p>
+              <button class="hero-text-box__btn btn">READ MORE »</button>
+            </div>
+          </div>
+
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+          <!-- <div class="hero-text-box__dots">
               <button class="dot">&nbsp;</button>
               <button class="dot">&nbsp;</button>
               <button class="dot">&nbsp;</button>
               <button class="dot">&nbsp;</button>
               <button class="dot dot--empty">&nbsp;</button>
-            </div>
-          </div>
+            </div> -->
         </section>
-        <section class="section-new-products">
+        <section class="section-new-products" id="products">
           <div class="product">
             <img
               class="product__img"
@@ -131,7 +191,7 @@
           <div class="product">
             <img
               class="product__img"
-              src="images/content/product1.jpg"
+              src="images/content/product2.jpg"
               alt="new-product-photo"
             />
             <h3 class="product__title">Brand new product</h3>
@@ -145,7 +205,7 @@
           <div class="product new-product">
             <img
               class="product__img"
-              src="images/content/product1.jpg"
+              src="images/content/product3.jpg"
               alt="new-product-photo"
             />
             <h3 class="product__title">Brand new product</h3>
@@ -157,7 +217,7 @@
             <button class="product__more-info-btn btn">Read more »</button>
           </div>
         </section>
-        <section class="section-features">
+        <section class="section-features" id="features">
           <h2 class="section-features__title">
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
             delectus necessitatibus illo, ipsam dolore non facilis"
@@ -179,7 +239,7 @@
             <div class="features">
               <img
                 class="features__img"
-                src="images/content/feature.jpg"
+                src="images/content/feature1.jpg"
                 alt="monitor-photo"
               />
               <div>
@@ -207,7 +267,7 @@
             <div class="features">
               <img
                 class="features__img"
-                src="images/content/feature.jpg"
+                src="images/content/feature2.jpg"
                 alt="monitor-photo"
               />
               <div>
@@ -235,7 +295,7 @@
             <div class="features">
               <img
                 class="features__img"
-                src="images/content/feature.jpg"
+                src="images/content/feature3.jpg"
                 alt="monitor-photo"
               />
               <div>
